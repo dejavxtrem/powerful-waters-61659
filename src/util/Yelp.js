@@ -21,7 +21,7 @@ const Yelp = {
                 }));
             }
             throw new Error ('Request failed! No input Criteria');
-        },networkError => console.log(networkError.message));
+        })
     }
 };
 
