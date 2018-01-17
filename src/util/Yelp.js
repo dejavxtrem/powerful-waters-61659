@@ -17,10 +17,11 @@ const Yelp = {
                         category: business.categories[0].title,
                         rating: business.rating,
                         reviewCount: business.review_count
-                        
+
                 }));
             }
-        });
+            throw new Error ('Request failed! No input Criteria');
+        },networkError => console.log(networkError.message));
     }
 };
 
